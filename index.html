@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avalie sua mentoria</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="pag">
+    <header>
+      <h1>Avalie sua mentoria</h1>
+  
+      <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+  
+      <img src="img1.png" alt="">
+    </header>
+    <form action="">
+      <legend id="titulo1">Informações pessoais</legend>
+
+      <div id="formulario">
+
+        <div class="flex">
+          <div class="colunas">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome">
+          </div>
+    
+          <div class="colunas">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome">
+          </div>
+        </div>
+    
+        <div class="colunas">
+          <label for="email">Email <span>(digite um email válido)</span></label>
+          <input type="email" id="email">
+        </div>
+    
+        <legend>Informações do mentor</legend>
+    
+        <div class="colunas" id="mentoria">
+          <label for="mentor">Selecione quem foi o seu mentor</label>
+          <input type="text" id="mentor">
+        </div>
+
+        <div class="colunas">
+          <label for="feedback">Feedback sobre o mentor</label>
+          <textarea name="" id="feedback" cols="30" rows="10"></textarea>
+        </div>
+
+        <div id="checkbox">
+          <input type="checkbox" id="check">
+          <label for="check">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+        </div>
+
+        <legend>Agendando próxima mentoria</legend>
+
+        <div class="flex">
+          <div class="colunas">
+            <label for="data">Data</label>
+            <input type="date">
+          </div>
+
+          <div class="colunas">
+            <label for="das">Das</label>
+            <input type="time">
+          </div>
+
+          <div class="colunas">
+            <label for="ate">Até</label>
+            <input type="time">
+          </div>
+        </div>
+
+        <button>Salvar</button>
+
+      </div>
+    </form>
+  </div>
+</body>
+</html>
